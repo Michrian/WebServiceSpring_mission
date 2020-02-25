@@ -36,7 +36,7 @@ public class PersonnelController {
 	
 	// Creer un personnel
 	
-	@RequestMapping(value = "/personne", consumes = "application/json",headers = "content-type=application/json")
+	@RequestMapping(value = "/AddPersonne", consumes = "application/json",headers = "content-type=application/json")
 	public Personnel createPersonnel(@Valid @RequestBody Personnel pers) {
 	    return Ipersonnel.save(pers);
 	}
